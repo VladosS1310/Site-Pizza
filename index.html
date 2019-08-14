@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>Pizza</title>
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<span><a href="#">Головна</a></span>
+			<span><a href="#">Доставка</a></span>
+		</div>
+		<div class="sircle">
+			<div class="sircle_img"><img src="img/logo.png" alt="logo"></div>
+		</div>
+		<div class="menu2">
+			<span><a href="#advantages">Переваги</a></span>
+			<span><a href="#contact">Контакти</a></span>
+		</div>
+	</header>
+	
+	<section class="content">
+		<section class="formochka" id="form">
+			<div class="close"><img src="img/close-icon.png" alt=""></div>
+		<div class="text_deliver">
+			<span>Доставка</span>
+		</div>
+		<form action="index_2.html">
+			<input type="name" placeholder="Імʼя" pattern="^[A-ZА-Я][A-Za-zа-яА-Я'` -]+$"
+			 maxlength="16" id="name" value="">
+			<input type="tel" placeholder="Номер телефону" pattern="^((0|\+38)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" id="phone">
+			<input type="text" placeholder="Адрес" pattern="^[а-яa-zА-ЯA-Z0-9,\.\s]+$" id="adres">
+		</form>
+		<a target="_blank" href="index_2.html"><button id="zakazat">ЗАКАЗАТЬ</button></a>
+		<div id="name-order"></div>
+		<div id="size-order"></div>
+		<div id="supplements-order"></div>
+		<div class="total_suma" id="all_all_price"><p>Загальна сума: <br><span>0</span></p><div class="plus"> + <img src="img/34629.svg" width="20px" class="hidden"></div></div>
+	</section>
+		<div class="pizza" id="pizza-one">
+			<img src="img/pizza.jpg" alt="" class="foto-pizza-one">
+			<div class="name_pizza paperoni-pizza-one" >Пепперони с ананасом</div>
+			<div class="size_pizza">
+				<div class="size-s select-pizza-one size-pizza-js">S</div>
+				<div class="size-l select-pizza-one active active-pizza-one size-pizza-js">L</div>
+				<div class="size-xl select-pizza-one size-pizza-js">XL</div>
+			</div>
+			<div class="price_and_basket">
+				<div fix-price="50" class="price price-pizza-one" id="all-fix-price">50<br></div>
+				<div class="gryvni">грн</div>
+				<div class="basket" id="basket-one" all-id="pizza-one">ЗАКАЗАТЬ</div>
+			</div>
+			<div class="supplements add-basket-one" sup-id="pizza-one">
+				<label fix-price-supp="10" class="container">Cheese - <i>10грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-one">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="5" class="container">Sausage - <i>5грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-one">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="12" class="container">Greens - <i>12грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-one">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="15" class="container">Tomatoes - <i>15грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-one">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="7" class="container">Onion - <i>7грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-one">
+				 	 <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+		<div class="pizza" id="pizza-two">
+			<img src="img/pizza1.jpg" alt="" class="foto-pizza-two">
+			<div class="name_pizza paperoni-pizza-two">Пепперони с томатами</div>
+			<div class="size_pizza">
+				<div class="size-s select-pizza-two size-pizza-js">S</div>
+				<div class="size-l select-pizza-two active active-pizza-two size-pizza-js">L</div>
+				<div class="size-xl select-pizza-two size-pizza-js">XL</div>
+			</div>
+			<div class="price_and_basket">
+				<div fix-price="75" class="price price-pizza-two" id="all-fix-price">75<br></div>
+				<div class="gryvni">грн</div>
+				<div class="basket" id="basket-two" all-id="pizza-two">ЗАКАЗАТЬ</div>
+			</div>
+			<div class="supplements add-basket-two" sup-id="pizza-two">
+				<label fix-price-supp="10" class="container">Cheese - <i>10грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-two">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="5" class="container">Sausage - <i>5грн</i> 
+				 	 <input type="checkbox" class="checkmark-pizza-two">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="12" class="container">Greens - <i>12грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-two">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="15"class="container">Tomatoes - <i>15грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-two">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="7" class="container">Onion - <i>7грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-two">
+				 	 <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+		<div class="pizza" id="pizza-three">
+			<img src="img/pizza3.jpg" alt="" class="foto-pizza-three">
+			<div class="name_pizza paperoni-pizza-three">Мясная</div>
+			<div class="size_pizza">
+				<div class="size-s select-pizza-three size-pizza-js">S</div>
+				<div class="size-l select-pizza-three active active-pizza-three size-pizza-js">L</div>
+				<div class="size-xl select-pizza-three size-pizza-js">XL</div>
+			</div>
+			<div class="price_and_basket">
+				<div fix-price="119" class="price price-pizza-three" id="all-fix-price">119<br></div>
+				<div class="gryvni">грн</div>
+				<div class="basket" id="basket-three" all-id="pizza-three">ЗАКАЗАТЬ</div>
+			</div>
+			<div class="supplements add-basket-three" sup-id="pizza-three">
+				<label fix-price-supp="10" class="container">Cheese - <i>10грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-three">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="5" class="container">Sausage - <i>5грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-three">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="12" class="container">Greens - <i>12грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-three">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="15" class="container">Tomatoes - <i>15грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-three">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="7" class="container">Onion - <i>7грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-three">
+				 	 <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+		<div class="pizza" id="pizza-four">
+			<img src="img/pizza4.jpg" alt="" class="foto-pizza-four">
+			<div class="name_pizza paperoni-pizza-four">Селянская</div>
+			<div class="size_pizza">
+				<div class="size-s select-pizza-four size-pizza-js">S</div>
+				<div class="size-l select-pizza-four active active-pizza-four size-pizza-js">L</div>
+				<div class="size-xl select-pizza-four size-pizza-js">XL</div>
+			</div>
+			<div class="price_and_basket">
+				<div fix-price="130" class="price price-pizza-four" id="all-fix-price">130<br></div>
+				<div class="gryvni">грн</div>	
+				<div class="basket" id="basket-four" all-id="pizza-four">ЗАКАЗАТЬ</div>
+			</div>
+			<div class="supplements add-basket-four" sup-id="pizza-four">
+				<label fix-price-supp="10" class="container">Cheese - <i>10грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-four">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="5" class="container">Sausage - <i>5грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-four">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="12" class="container">Greens - <i>12грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-four">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="15" class="container">Tomatoes - <i>15грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-four">
+				 	 <span class="checkmark"></span>
+				</label>
+				<label fix-price-supp="7" class="container">Onion - <i>7грн</i>
+				 	 <input type="checkbox" class="checkmark-pizza-four">
+				 	 <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="advantages" id="advantages">
+		<div class="text_advantages">
+			<i>Переваги</i> <br>
+			<span><b><i>Чому клієнти обирають службу доставки PIZZA ITALIAN?</i></b></span>
+		</div>
+		<div class="blocks_icons_and_text">
+			<div class="icons_and_text">
+				<div class="icon"><img src="img/img-promo1.png" alt=""></div>
+				<div class="text"><i>... Тому що - <b>ми смачні</b>. Заказавші у нас - повертаються знову і знову.</i></div>
+			</div>
+			<div class="icons_and_text">
+				<div class="icon"><img src="img/img-promo2.png" alt=""></div>
+				<div class="text"><i>... Тому що - <b>ми ситні</b>. У нас дуже багато начинки в піці і ролах.</i></div>
+			</div>
+			<div class="icons_and_text">
+				<div class="icon"><img src="img/img-promo3.png" alt=""></div>
+				<div class="text"><i>... Тому що - <b>ми швидкі</b>. Ми розуміємо, що Ви вже зголодніли і дуже поспішаємо до Вас!</i></div>
+			</div>
+			<div class="icons_and_text">
+				<div class="icon"><img src="img/img-promo4.png" alt=""></div>
+				<div class="text"><i>... Тому що ми більше всіх <b>цінуємо і любимо своїх Клієнтів!</b></i></div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contact" id="contact">
+		<div id="map"></div>
+		<div class="block_information">
+				<div class="under_block"></div>
+				<div class="block_contact">
+					<div class="text_contact">
+						<span>Контакти</span><br><br>
+						Прием заказов круглосуточно:
+	 					<div class="icon_phone">
+	 						<i class="fas fa-phone"></i>
+	 					</div>(044) 237 16 16 <br>
+	 							(063) 237 16 16
+	 								<br><br>
+	 
+	 					По вопросам сотрудничества:
+									<br><br>
+							<div class="icon_message">
+	 						<i class="fas fa-envelope"></i>
+	 					</div>info@adriano.com.ua
+									<br><br>
+								04050, Киев
+									<br><br>
+						<div class="icon_marker">
+	 						<i class="fas fa-map-marker-alt"></i>
+	 					</div>вулиця Борщагівська 152,
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<div>© 2019, Pizza Italian</div>
+	</footer>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwfuj6R_OAyD20QXknjCA5nm0m6tZIjo4&callback=initMap"
+        async defer></script>
+    <script src="Script/script.js" async></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+body {
+	display: flex;
+	justify-content: center;
+}
+.confirmation_of_the_order {
+	width: 700px;
+	height: 700px;
+	background-color: #EFEFEF;
+	border-radius: 30px;
+}
+.text {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+.foto_and_input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.inputs {
+	margin-right: 90px;
+	margin-top: 70px;
+}
+[type="name"] {
+	margin-left: 30px;
+}
+[type="phone"] {
+	margin-left: 1px;
+}
+[type="text"] {
+	margin-left: 2px;
+}
+.inputs span {
+	margin-right: 20px;
+}
+.name_pizza_confirm {
+	margin-top: 20px;
+}
+.name_pizza_confirm span {
+	margin-left: 80px;
+}
+.foto {
+	margin: 30px 0px 0px 30px;
+}
+.name_pizza {
+	margin-left: 30px;
+    width: 225px;
+    display: flex;
+    justify-content: center;
+}
+.text_and_sizze_pizza {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 30px;
+	justify-content: center;
+	width: 225px;
+	margin-top: 20px;
+}
+.size_pizza {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	margin-left: 10px;
+}
+.supplements {
+	display: flex;
+	width: 225px;
+	margin-left: 30px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+.supple {
+	border-bottom: 5px solid #bebebe;
+    background-image: 
+       linear-gradient(to bottom, #ffffff, #eeeeee, #dedede, #cecece, #bebebe),
+       linear-gradient(to bottom, #ffffff, #eeeeee, #dedede, #cecece, #bebebe);
+    background-size:5px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+    padding: 20px 30px 10px 30px;
+    margin-top: 20px;
+}
+button {
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	margin-left: 500px;
+}
+.ok {
+	background: #5CDE71;
+}
+.close {
+	background: #E75252;
+	margin-top: 20px;
+}
+.total_suma {
+	width: 50px;
+	height: 25px;
+	background-color: white;
+	margin-left: 10px;
+}
+.text_and_total_suma {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 30px;
+	margin-right: 50px;
+}
